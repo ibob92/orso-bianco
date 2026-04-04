@@ -11,11 +11,12 @@ export default function HeroSection() {
           </p>
           <h1 className="font-serif text-5xl md:text-7xl text-primary leading-[1.08] tracking-tight mb-6">
             L&apos;Arte del{" "}
-            <em className="block">Gelato</em>
+            <em className="block">Gelato Artigianale</em>
           </h1>
           <p className="text-on-surface-variant text-lg leading-relaxed max-w-md mb-8">
-            Creato ogni giorno a mano con materie prime d&apos;eccellenza.
-            La gelateria ufficiale di Casa Sanremo.
+            Dal 1974 nel cuore di Castiglione della Pescaia, in Maremma Toscana.
+            Gelato artigianale con materie prime d&apos;eccellenza.
+            Gelateria ufficiale di Casa Sanremo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -43,7 +44,7 @@ export default function HeroSection() {
           <div className="relative z-10 rounded-2xl overflow-hidden bg-surface-low">
             <Image
               src="/gelato-hero.png"
-              alt="Cono gelato artigianale Orso Bianco con cialda personalizzata"
+              alt="Cono gelato artigianale Gelateria Orso Bianco a Castiglione della Pescaia con cialda logo e sfondo borgo medievale"
               width={800}
               height={1067}
               className="w-full h-auto object-cover"

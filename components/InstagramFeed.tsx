@@ -1,10 +1,10 @@
 const posts = [
-  { src: "/ig/post-0.jpg", alt: "Post Instagram Orso Bianco 1" },
-  { src: "/ig/post-1.jpg", alt: "Post Instagram Orso Bianco 2" },
-  { src: "/ig/post-2.jpg", alt: "Post Instagram Orso Bianco 3" },
-  { src: "/ig/post-3.jpg", alt: "Post Instagram Orso Bianco 4" },
-  { src: "/ig/post-4.jpg", alt: "Post Instagram Orso Bianco 5" },
-  { src: "/ig/post-5.jpg", alt: "Post Instagram Orso Bianco 6" },
+  { src: "/ig/post-0.jpg", alt: "Gelateria Orso Bianco a Casa Sanremo 2026 — Festival di Sanremo" },
+  { src: "/ig/post-1.jpg", alt: "Il team Orso Bianco con Francesco Renga a Casa Sanremo" },
+  { src: "/ig/post-2.jpg", alt: "Gelato artigianale Orso Bianco servito a Casa Sanremo" },
+  { src: "/ig/post-3.jpg", alt: "Gelateria Orso Bianco al Teatro Ariston durante il Festival di Sanremo" },
+  { src: "/ig/post-4.jpg", alt: "Cornetti artigianali e brioches della Gelateria Orso Bianco Castiglione della Pescaia" },
+  { src: "/ig/post-5.jpg", alt: "Carmine Marsella e Sara Masci — titolari Gelateria Orso Bianco dal 2013" },
 ];
 
 export default function InstagramFeed() {

@@ -17,9 +17,53 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Gelateria Orso Bianco | Il Miglior Gelato a Castiglione della Pescaia",
+  title: "Gelateria Orso Bianco | Gelato Artigianale a Castiglione della Pescaia",
   description:
-    "Vieni a provare il vero gelato artigianale alla Gelateria Orso Bianco in Via Roma 10, Castiglione della Pescaia. Gelateria ufficiale di Casa Sanremo.",
+    "Gelateria Orso Bianco: il miglior gelato artigianale a Castiglione della Pescaia, Maremma Toscana. Dal 1974 in Via Roma 10. Gelateria ufficiale di Casa Sanremo 2024-2025-2026. Pistacchio di Bronte, limone basilico ananas e gusti unici.",
+  keywords: [
+    "gelateria Castiglione della Pescaia",
+    "gelato artigianale Castiglione della Pescaia",
+    "gelateria Maremma",
+    "gelato artigianale Toscana",
+    "miglior gelateria Grosseto",
+    "Orso Bianco gelateria",
+    "gelato Casa Sanremo",
+    "gelateria lungomare Castiglione",
+    "pistacchio di Bronte gelato",
+    "gelato artigianale dal 1974",
+    "Best in Maremma gelateria",
+  ],
+  alternates: {
+    canonical: "https://orso-bianco.vercel.app",
+  },
+  openGraph: {
+    title: "Gelateria Orso Bianco | Gelato Artigianale a Castiglione della Pescaia",
+    description:
+      "Dal 1974 il vero gelato artigianale nel cuore della Maremma. Gelateria ufficiale di Casa Sanremo. Vieni a trovarci in Via Roma 10, Castiglione della Pescaia.",
+    url: "https://orso-bianco.vercel.app",
+    siteName: "Gelateria Orso Bianco",
+    locale: "it_IT",
+    type: "website",
+    images: [
+      {
+        url: "https://orso-bianco.vercel.app/gelato-hero.png",
+        width: 800,
+        height: 1067,
+        alt: "Cono gelato artigianale Gelateria Orso Bianco con cialda personalizzata e sfondo Castiglione della Pescaia",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gelateria Orso Bianco | Gelato Artigianale a Castiglione della Pescaia",
+    description:
+      "Dal 1974 il vero gelato artigianale nel cuore della Maremma Toscana. Gelateria ufficiale di Casa Sanremo.",
+    images: ["https://orso-bianco.vercel.app/gelato-hero.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
