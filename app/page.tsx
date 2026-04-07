@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import GustoCard from "@/components/GustoCard";
-import FidelityCard from "@/components/FidelityCard";
 import InstagramFeed from "@/components/InstagramFeed";
 import MapCard from "@/components/MapCard";
 import Footer from "@/components/Footer";
@@ -106,44 +106,35 @@ const jsonLd = {
   ],
 };
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Dove si trova la Gelateria Orso Bianco?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "La Gelateria Orso Bianco si trova in Via Roma 10-12 a Castiglione della Pescaia (GR), sul lungomare della Maremma Toscana. È raggiungibile a piedi dal centro storico.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Quali sono i gusti più famosi della Gelateria Orso Bianco?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "I gusti signature includono il Pistacchio di Bronte DOP, il Limone Basilico e Ananas (il più citato nelle recensioni), il Caramello al Burro Salato, il Pompelmo Rosa e Champagne e il Croccante all'Amarena.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Perché la Gelateria Orso Bianco è famosa?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Orso Bianco è la gelateria ufficiale di Casa Sanremo dal 2024 al 2026, ha vinto il premio Best in Maremma per 4 anni consecutivi (2020-2023) e dal 1974 produce gelato artigianale con materie prime d'eccellenza.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "La Gelateria Orso Bianco ha una fidelity card?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sì, Orso Bianco offre una Fidelity Card digitale tramite l'app BonusQR. Puoi accumulare punti ad ogni acquisto e ottenere sconti esclusivi e prodotti omaggio.",
-      },
-    },
-  ],
-};
+const pressArticles = [
+  {
+    source: "Il Giunco",
+    date: "5 febbraio 2025",
+    title: "A Sanremo il gelato che arriva dalla Maremma",
+    excerpt:
+      "L'Orso Bianco torna protagonista al Festival, portando l'artigianalità maremmana a Casa Sanremo per il secondo anno consecutivo.",
+    image: "/press/ilgiunco-sanremo-2025.jpg",
+    url: "https://www.ilgiunco.net/2025/02/05/a-sanremo-il-gelato-che-arriva-dalla-maremma-lorso-bianco-protagonista-al-festival/",
+  },
+  {
+    source: "La Nazione",
+    date: "3 settembre 2024",
+    title: "Orso Bianco, mezzo secolo di storia. E sempre per tutti i gusti",
+    excerpt:
+      "Cinquant'anni di gelato artigianale a Castiglione della Pescaia, raccontati attraverso le tre generazioni che ne hanno scritto la storia.",
+    image: "/press/la-nazione-mezzo-secolo.webp",
+    url: "https://www.lanazione.it/grosseto/cronaca/orso-bianco-mezzo-secolo-di-storia-e-sempre-per-tutti-i-gusti-853811e6",
+  },
+  {
+    source: "Il Giunco",
+    date: "2 febbraio 2024",
+    title: "Il gelato maremmano conquista Sanremo",
+    excerpt:
+      "Carmine e Sara protagonisti al Festival: la gelateria di Castiglione porta le sue creazioni a Casa Sanremo.",
+    image: "/press/ilgiunco-sanremo-2024.jpg",
+    url: "https://www.ilgiunco.net/2024/02/02/il-gelato-maremmano-conquista-sanremo-lorso-bianco-protagonista-del-festival/",
+  },
+];
 
 export default function Home() {
   return (
@@ -152,10 +143,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
 
       <Navbar />
 
@@ -163,17 +150,48 @@ export default function Home() {
         <HeroSection />
 
         {/* La Nostra Storia — SEO content block */}
-        <section className="bg-surface">
-          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-12 md:py-16 text-center">
-            <h2 className="font-serif text-2xl md:text-3xl text-primary mb-4">
-              Gelateria Artigianale dal 1974 a Castiglione della Pescaia
-            </h2>
-            <p className="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
-              Da oltre 50 anni, la Gelateria Orso Bianco è un punto di riferimento per il gelato artigianale
-              in Maremma Toscana. Ogni gusto viene creato ogni giorno nel nostro laboratorio sul lungomare
-              di Castiglione della Pescaia, con ingredienti selezionati e senza coloranti artificiali.
-              Premio Best in Maremma per 4 anni consecutivi e gelateria ufficiale di Casa Sanremo.
-            </p>
+        <section id="storia" className="bg-surface">
+          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+              {/* Photo */}
+              <div className="relative">
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gold/10 rounded-full blur-[60px]" />
+                <div className="relative rounded-2xl overflow-hidden shadow-elevated">
+                  <Image
+                    src="/fondatori-casa-sanremo.jpg"
+                    alt="Carmine Marsella e Sara Masci, titolari della Gelateria Orso Bianco, a Casa Sanremo"
+                    width={960}
+                    height={1280}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Text */}
+              <div>
+                <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                  La nostra storia
+                </p>
+                <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight mb-6">
+                  Un pit stop che è durato <em>una vita</em>
+                </h2>
+                <div className="space-y-4 text-on-surface-variant leading-relaxed">
+                  <p>
+                    Carmine e Sara avevano diciotto e diciassette anni. Tornavano da Torino
+                    verso Frosinone e decisero di fare un pit stop per strada. Si fermarono
+                    a Castiglione della Pescaia, e quel posto li folgorò. Si promisero che
+                    un giorno sarebbero tornati per restare.
+                  </p>
+                  <p>
+                    L&apos;hanno fatto davvero. Nel 2013 hanno rilevato una gelateria storica
+                    sul lungomare, partendo da zero — nessun corso, nessuna scorciatoia.
+                    Hanno imparato da autodidatti, cercando la loro ricetta fra latte, zucchero
+                    e panna. Ci sono voluti cinque anni per trovarla. Oggi l&apos;Orso Bianco
+                    è la loro casa.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -194,8 +212,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        <FidelityCard />
 
         {/* Casa Sanremo + Contatti */}
         <section id="contatti" className="bg-surface-low">
@@ -219,51 +235,58 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ — SEO featured snippet section */}
-        <section className="bg-surface">
+        {/* Rassegna Stampa */}
+        <section id="press" className="bg-surface">
           <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
-            <h2 className="font-serif text-3xl md:text-4xl text-primary text-center mb-10">
-              Domande Frequenti
-            </h2>
-            <div className="max-w-2xl mx-auto space-y-8">
-              <div>
-                <h3 className="font-serif text-lg text-primary mb-2">
-                  Dove si trova la Gelateria Orso Bianco?
-                </h3>
-                <p className="text-on-surface-variant leading-relaxed">
-                  La Gelateria Orso Bianco si trova in Via Roma 10-12 a Castiglione della Pescaia (GR),
-                  sul lungomare della Maremma Toscana. È raggiungibile a piedi dal centro storico.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-serif text-lg text-primary mb-2">
-                  Quali sono i gusti più famosi della Gelateria Orso Bianco?
-                </h3>
-                <p className="text-on-surface-variant leading-relaxed">
-                  I gusti signature includono il Pistacchio di Bronte DOP, il Limone Basilico e Ananas
-                  (il più citato nelle recensioni), il Caramello al Burro Salato, il Pompelmo Rosa e
-                  Champagne e il Croccante all&apos;Amarena.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-serif text-lg text-primary mb-2">
-                  Perché la Gelateria Orso Bianco è famosa?
-                </h3>
-                <p className="text-on-surface-variant leading-relaxed">
-                  Orso Bianco è la gelateria ufficiale di Casa Sanremo dal 2024 al 2026, ha vinto il
-                  premio Best in Maremma per 4 anni consecutivi (2020-2023) e dal 1974 produce gelato
-                  artigianale con materie prime d&apos;eccellenza.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-serif text-lg text-primary mb-2">
-                  La Gelateria Orso Bianco ha una fidelity card?
-                </h3>
-                <p className="text-on-surface-variant leading-relaxed">
-                  Sì, Orso Bianco offre una Fidelity Card digitale tramite l&apos;app BonusQR. Puoi
-                  accumulare punti ad ogni acquisto e ottenere sconti esclusivi e prodotti omaggio.
-                </p>
-              </div>
+            <div className="text-center mb-12 md:mb-16">
+              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                Rassegna Stampa
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl text-primary">
+                Hanno <em>raccontato</em> di noi
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+              {pressArticles.map((article) => (
+                <a
+                  key={article.url}
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col bg-surface-lowest rounded-2xl overflow-hidden shadow-ambient hover:shadow-elevated transition-all hover:-translate-y-1"
+                >
+                  <div className="relative aspect-[16/9] overflow-hidden bg-surface-low">
+                    <Image
+                      src={article.image}
+                      alt={`Anteprima articolo: ${article.title}`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="flex flex-col flex-1 p-6">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-xs uppercase tracking-[0.15em] font-bold text-primary">
+                        {article.source}
+                      </span>
+                      <span className="text-xs text-on-surface-variant">
+                        {article.date}
+                      </span>
+                    </div>
+                    <h3 className="font-serif text-lg md:text-xl text-primary leading-snug mb-3 group-hover:text-gold transition-colors">
+                      {article.title}
+                    </h3>
+                    <p className="text-sm text-on-surface-variant leading-relaxed flex-1 mb-4">
+                      {article.excerpt}
+                    </p>
+                    <span className="text-xs font-semibold text-gold inline-flex items-center gap-1 mt-auto">
+                      Leggi l&apos;articolo
+                      <span className="group-hover:translate-x-1 transition-transform">&#8594;</span>
+                    </span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </section>

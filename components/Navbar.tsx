@@ -1,6 +1,6 @@
 const navLinks = [
+  { label: "La Storia", href: "#storia" },
   { label: "I Gusti", href: "#gusti" },
-  { label: "Fidelity", href: "#fidelity" },
   { label: "Contatti", href: "#contatti" },
 ];
 
