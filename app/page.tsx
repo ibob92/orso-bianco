@@ -135,6 +135,12 @@ const jsonLd = {
       ],
       foundingDate: "1974",
       parentOrganization: { "@id": `${SITE_URL}/#org` },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.3",
+        bestRating: "5",
+        reviewCount: "275",
+      },
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
@@ -147,7 +153,7 @@ const jsonLd = {
             "Saturday",
             "Sunday",
           ],
-          opens: "10:00",
+          opens: "13:00",
           closes: "24:00",
           validFrom: "2026-06-01",
           validThrough: "2026-09-30",
@@ -155,8 +161,8 @@ const jsonLd = {
         {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Friday", "Saturday", "Sunday"],
-          opens: "14:00",
-          closes: "19:00",
+          opens: "13:30",
+          closes: "18:30",
           validFrom: "2026-10-01",
           validThrough: "2027-05-31",
         },

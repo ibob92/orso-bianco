@@ -65,9 +65,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  verification: {
-    google: "REPLACE_ME_GOOGLE_SEARCH_CONSOLE_TOKEN",
-  },
 };
 
 export default function RootLayout({

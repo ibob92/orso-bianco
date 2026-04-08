@@ -1,14 +1,15 @@
 import OpeningStatus, { SeasonHours } from "./OpeningStatus";
 
-// Orari placeholder — verranno aggiornati in Task 15 con i dati reali dall'utente
+// Summer: open daily 13:00-24:00 (from TripAdvisor)
+// Winter: weekends only 13:30-18:30 (from Google Maps)
 const SUMMER_HOURS: SeasonHours = {
-  monday: [10, 24],
-  tuesday: [10, 24],
-  wednesday: [10, 24],
-  thursday: [10, 24],
-  friday: [10, 24],
-  saturday: [10, 24],
-  sunday: [10, 24],
+  monday: [13, 24],
+  tuesday: [13, 24],
+  wednesday: [13, 24],
+  thursday: [13, 24],
+  friday: [13, 24],
+  saturday: [13, 24],
+  sunday: [13, 24],
 };
 
 const WINTER_HOURS: SeasonHours = {
@@ -16,9 +17,9 @@ const WINTER_HOURS: SeasonHours = {
   tuesday: null,
   wednesday: null,
   thursday: null,
-  friday: [14, 19],
-  saturday: [14, 19],
-  sunday: [14, 19],
+  friday: [13.5, 18.5],
+  saturday: [13.5, 18.5],
+  sunday: [13.5, 18.5],
 };
 
 type DayRow = {
@@ -41,7 +42,9 @@ function formatHours(hours: [number, number] | null): string {
   const [open, close] = hours;
   const formatHour = (h: number) => {
     if (h === 24) return "24:00";
-    return `${h.toString().padStart(2, "0")}:00`;
+    const whole = Math.floor(h);
+    const minutes = Math.round((h - whole) * 60);
+    return `${whole.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
   };
   return `${formatHour(open)} – ${formatHour(close)}`;
 }
