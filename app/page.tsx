@@ -54,55 +54,180 @@ const gustiData = [
   },
 ];
 
+const SITE_URL = "https://gelateriaorsobianco.it";
+
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "IceCreamShop",
-  name: "Gelateria Orso Bianco",
-  alternateName: "Orso Bianco Gelateria Artigianale",
-  description:
-    "Gelateria artigianale dal 1974 a Castiglione della Pescaia, Maremma Toscana. Gelateria ufficiale di Casa Sanremo 2024, 2025 e 2026. Gelato con materie prime d'eccellenza.",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Via Roma 10-12",
-    addressLocality: "Castiglione della Pescaia",
-    postalCode: "58043",
-    addressRegion: "GR",
-    addressCountry: "IT",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 42.7636,
-    longitude: 10.8826,
-  },
-  telephone: "+39 0564 934656",
-  url: "https://orso-bianco.vercel.app",
-  priceRange: "€",
-  servesCuisine: ["Gelato artigianale", "Sorbetto", "Granite"],
-  image: [
-    "https://orso-bianco.vercel.app/gelato-hero.webp",
-    "https://orso-bianco.vercel.app/gusto-pistacchio.webp",
-    "https://orso-bianco.vercel.app/gusto-limone.webp",
-    "https://orso-bianco.vercel.app/gusto-caramello.webp",
-  ],
-  sameAs: [
-    "https://www.instagram.com/orsobianco_/",
-    "https://www.tripadvisor.it/Restaurant_Review-g194733-d7024159-Reviews-Bar_Gelateria_Orso_Bianco-Castiglione_della_Pescaia_Province_of_Grosseto_Tuscany.html",
-  ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.6",
-    bestRating: "5",
-    reviewCount: "200",
-  },
-  foundingDate: "1974",
-  award: [
-    "Gelateria Ufficiale Casa Sanremo 2024",
-    "Gelateria Ufficiale Casa Sanremo 2025",
-    "Gelateria Ufficiale Casa Sanremo 2026",
-    "Best in Maremma 2020",
-    "Best in Maremma 2021",
-    "Best in Maremma 2022",
-    "Best in Maremma 2023",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#org`,
+      name: "Gelateria Orso Bianco",
+      alternateName: "Orso Bianco Gelateria Artigianale",
+      url: SITE_URL,
+      foundingDate: "1974",
+      founder: [
+        { "@id": `${SITE_URL}/#carmine` },
+        { "@id": `${SITE_URL}/#sara` },
+      ],
+      sameAs: [
+        "https://www.instagram.com/orsobianco_/",
+        "https://www.facebook.com/OrsobiancoCdp/",
+        "https://www.tripadvisor.it/Restaurant_Review-g194733-d7024159-Reviews-Bar_Gelateria_Orso_Bianco-Castiglione_della_Pescaia_Province_of_Grosseto_Tuscany.html",
+      ],
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#carmine`,
+      name: "Carmine Marsella",
+      jobTitle: "Titolare e gelatiere",
+      worksFor: { "@id": `${SITE_URL}/#org` },
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#sara`,
+      name: "Sara Masci",
+      jobTitle: "Titolare",
+      worksFor: { "@id": `${SITE_URL}/#org` },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#site`,
+      url: SITE_URL,
+      name: "Gelateria Orso Bianco",
+      inLanguage: "it-IT",
+      publisher: { "@id": `${SITE_URL}/#org` },
+    },
+    {
+      "@type": "IceCreamShop",
+      "@id": `${SITE_URL}/#shop`,
+      name: "Gelateria Orso Bianco",
+      alternateName: "Orso Bianco Gelateria Artigianale",
+      description:
+        "Gelateria artigianale dal 1974 a Castiglione della Pescaia, Maremma Toscana. Gelateria ufficiale di Casa Sanremo 2024, 2025 e 2026. Gelato con materie prime d'eccellenza.",
+      url: SITE_URL,
+      telephone: "+39 0564 934656",
+      priceRange: "€",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Via Roma 10-12",
+        addressLocality: "Castiglione della Pescaia",
+        postalCode: "58043",
+        addressRegion: "GR",
+        addressCountry: "IT",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 42.7636,
+        longitude: 10.8826,
+      },
+      servesCuisine: ["Gelato artigianale", "Sorbetto", "Granite"],
+      image: [
+        `${SITE_URL}/gelato-hero.webp`,
+        `${SITE_URL}/gusto-pistacchio.webp`,
+        `${SITE_URL}/gusto-limone.webp`,
+        `${SITE_URL}/gusto-caramello.webp`,
+      ],
+      founder: [
+        { "@id": `${SITE_URL}/#carmine` },
+        { "@id": `${SITE_URL}/#sara` },
+      ],
+      foundingDate: "1974",
+      parentOrganization: { "@id": `${SITE_URL}/#org` },
+      hasMenu: {
+        "@type": "Menu",
+        name: "Gusti Signature",
+        hasMenuSection: {
+          "@type": "MenuSection",
+          name: "Gusti del Gelato Artigianale",
+          hasMenuItem: [
+            {
+              "@type": "MenuItem",
+              name: "Pistacchio di Bronte DOP",
+              description:
+                "Tostato a legna e raffinato a pietra. Intenso, persistente, inconfondibile.",
+            },
+            {
+              "@type": "MenuItem",
+              name: "Limone, Basilico & Ananas",
+              description:
+                "L'incontro fra agrumi e erbe aromatiche. Il gusto che ha conquistato Sanremo.",
+            },
+            {
+              "@type": "MenuItem",
+              name: "Caramello al Burro Salato",
+              description:
+                "Dolcezza profonda con un pizzico di sale bretone.",
+            },
+          ],
+        },
+      },
+      event: [
+        {
+          "@type": "Event",
+          name: "Casa Sanremo 2026",
+          startDate: "2026-02-04",
+          endDate: "2026-02-15",
+          eventStatus: "https://schema.org/EventScheduled",
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          location: {
+            "@type": "Place",
+            name: "Casa Sanremo",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Sanremo",
+              addressCountry: "IT",
+            },
+          },
+          performer: { "@id": `${SITE_URL}/#shop` },
+        },
+        {
+          "@type": "Event",
+          name: "Casa Sanremo 2025",
+          startDate: "2025-02-09",
+          endDate: "2025-02-15",
+          eventStatus: "https://schema.org/EventScheduled",
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          location: {
+            "@type": "Place",
+            name: "Casa Sanremo",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Sanremo",
+              addressCountry: "IT",
+            },
+          },
+          performer: { "@id": `${SITE_URL}/#shop` },
+        },
+        {
+          "@type": "Event",
+          name: "Casa Sanremo 2024",
+          startDate: "2024-02-04",
+          endDate: "2024-02-10",
+          eventStatus: "https://schema.org/EventScheduled",
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          location: {
+            "@type": "Place",
+            name: "Casa Sanremo",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Sanremo",
+              addressCountry: "IT",
+            },
+          },
+          performer: { "@id": `${SITE_URL}/#shop` },
+        },
+      ],
+      award: [
+        "Gelateria Ufficiale Casa Sanremo 2024",
+        "Gelateria Ufficiale Casa Sanremo 2025",
+        "Gelateria Ufficiale Casa Sanremo 2026",
+        "Best in Maremma 2020",
+        "Best in Maremma 2021",
+        "Best in Maremma 2022",
+        "Best in Maremma 2023",
+      ],
+    },
   ],
 };
 
