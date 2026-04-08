@@ -49,6 +49,7 @@ export default function HeroSection() {
               height={1067}
               className="w-full h-auto object-cover"
               priority
+              fetchPriority="high"
             />
           </div>
         </div>
