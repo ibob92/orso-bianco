@@ -31,9 +31,12 @@ Posizionata fra la sezione contatti (Sanremo + Instagram + Map) e la rassegna st
 **Colonna sinistra — Orari**:
 - Eyebrow gold "Orari di apertura"
 - Heading serif "Vieni a trovarci"
-- Due tabelle affiancate o stacked: **Estate** (giugno-settembre) e **Inverno** (ottobre-maggio)
-- Highlight visivo del giorno corrente (background `accent-light`)
-- Badge "Aperto adesso" (verde) o "Chiuso ora" (grigio) calcolato lato server al render usando `Date()` in TZ `Europe/Rome`
+- Due tabelle affiancate o stacked: **Estate** (giugno-settembre) e **Inverno** (ottobre-maggio). Le tabelle in sé sono statiche (Server Component), così il contenuto è SEO-indicizzabile.
+- **Componente client `<OpeningStatus />`** (unico Client Component nuovo) che gestisce:
+  - Highlight del giorno corrente (background `accent-light` sulla riga della tabella giusta)
+  - Badge "Aperto adesso" (verde) / "Chiuso ora" (grigio)
+  - Calcolo via `Intl.DateTimeFormat` con `timeZone: "Europe/Rome"` al mount
+  - Rendering condizionale: il contenuto statico degli orari resta SSR e SEO-visibile; gli elementi dinamici (badge + highlight) appaiono dopo l'hydration senza causare CLS (prenotano lo spazio con `opacity-0` → `opacity-100`).
 
 **Colonna destra — Come trovarci**:
 - Card minimale con:
