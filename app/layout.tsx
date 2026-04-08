@@ -17,6 +17,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gelateriaorsobianco.it"),
   title: "Gelateria Orso Bianco | Gelato Artigianale a Castiglione della Pescaia",
   description:
     "Gelateria Orso Bianco: il miglior gelato artigianale a Castiglione della Pescaia, Maremma Toscana. Dal 1974 in Via Roma 10. Gelateria ufficiale di Casa Sanremo 2024-2025-2026. Pistacchio di Bronte, limone basilico ananas e gusti unici.",
@@ -34,19 +35,19 @@ export const metadata: Metadata = {
     "Best in Maremma gelateria",
   ],
   alternates: {
-    canonical: "https://orso-bianco.vercel.app",
+    canonical: "/",
   },
   openGraph: {
     title: "Gelateria Orso Bianco | Gelato Artigianale a Castiglione della Pescaia",
     description:
       "Dal 1974 il vero gelato artigianale nel cuore della Maremma. Gelateria ufficiale di Casa Sanremo. Vieni a trovarci in Via Roma 10, Castiglione della Pescaia.",
-    url: "https://orso-bianco.vercel.app",
+    url: "https://gelateriaorsobianco.it",
     siteName: "Gelateria Orso Bianco",
     locale: "it_IT",
     type: "website",
     images: [
       {
-        url: "https://orso-bianco.vercel.app/gelato-hero.png",
+        url: "/gelato-hero.webp",
         width: 800,
         height: 1067,
         alt: "Cono gelato artigianale Gelateria Orso Bianco con cialda personalizzata e sfondo Castiglione della Pescaia",
@@ -58,11 +59,14 @@ export const metadata: Metadata = {
     title: "Gelateria Orso Bianco | Gelato Artigianale a Castiglione della Pescaia",
     description:
       "Dal 1974 il vero gelato artigianale nel cuore della Maremma Toscana. Gelateria ufficiale di Casa Sanremo.",
-    images: ["https://orso-bianco.vercel.app/gelato-hero.png"],
+    images: ["/gelato-hero.webp"],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  verification: {
+    google: "REPLACE_ME_GOOGLE_SEARCH_CONSOLE_TOKEN",
   },
 };
 
