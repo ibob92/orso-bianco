@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import GustoCard from "@/components/GustoCard";
 import InstagramFeed from "@/components/InstagramFeed";
 import MapCard from "@/components/MapCard";
+import OpeningHours from "@/components/OpeningHours";
 import Footer from "@/components/Footer";
 
 const gustiData = [
@@ -134,6 +135,32 @@ const jsonLd = {
       ],
       foundingDate: "1974",
       parentOrganization: { "@id": `${SITE_URL}/#org` },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "10:00",
+          closes: "24:00",
+          validFrom: "2026-06-01",
+          validThrough: "2026-09-30",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Friday", "Saturday", "Sunday"],
+          opens: "14:00",
+          closes: "19:00",
+          validFrom: "2026-10-01",
+          validThrough: "2027-05-31",
+        },
+      ],
       hasMenu: {
         "@type": "Menu",
         name: "Gusti Signature",
@@ -359,6 +386,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <OpeningHours />
 
         {/* Rassegna Stampa */}
         <section id="press" className="bg-surface">
