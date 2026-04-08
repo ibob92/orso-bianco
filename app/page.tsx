@@ -11,7 +11,7 @@ const gustiData = [
     name: "Pistacchio di Bronte DOP",
     description:
       "Tostato a legna e raffinato a pietra. Intenso, persistente, inconfondibile. Dal terreno vulcanico dell'Etna alla nostra mantecatrice.",
-    imageSrc: "/gusto-pistacchio.png",
+    imageSrc: "/gusto-pistacchio.webp",
     imageAlt: "Gelato al pistacchio di Bronte DOP — gusto signature della Gelateria Orso Bianco a Castiglione della Pescaia",
     review: {
       name: "Sciass",
@@ -26,7 +26,7 @@ const gustiData = [
     name: "Limone, Basilico & Ananas",
     description:
       "L'incontro fra agrumi e erbe aromatiche. Fresco, audace, indimenticabile. Il gusto che ha conquistato Sanremo.",
-    imageSrc: "/gusto-limone.png",
+    imageSrc: "/gusto-limone.webp",
     imageAlt: "Gelato limone basilico e ananas — creazione originale Gelateria Orso Bianco, Maremma Toscana",
     review: {
       name: "Alfonso P.",
@@ -41,7 +41,7 @@ const gustiData = [
     name: "Caramello al Burro Salato",
     description:
       "Dolcezza profonda con un pizzico di sale bretone. Il comfort food elevato ad arte.",
-    imageSrc: "/gusto-caramello.png",
+    imageSrc: "/gusto-caramello.webp",
     imageAlt: "Gelato al caramello e burro salato con fiocchi di sale — best seller Gelateria Orso Bianco",
     review: {
       name: "cosimo m.",
@@ -79,10 +79,10 @@ const jsonLd = {
   priceRange: "€",
   servesCuisine: ["Gelato artigianale", "Sorbetto", "Granite"],
   image: [
-    "https://orso-bianco.vercel.app/gelato-hero.png",
-    "https://orso-bianco.vercel.app/gusto-pistacchio.png",
-    "https://orso-bianco.vercel.app/gusto-limone.png",
-    "https://orso-bianco.vercel.app/gusto-caramello.png",
+    "https://orso-bianco.vercel.app/gelato-hero.webp",
+    "https://orso-bianco.vercel.app/gusto-pistacchio.webp",
+    "https://orso-bianco.vercel.app/gusto-limone.webp",
+    "https://orso-bianco.vercel.app/gusto-caramello.webp",
   ],
   sameAs: [
     "https://www.instagram.com/orsobianco_/",

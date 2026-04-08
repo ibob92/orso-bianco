@@ -43,7 +43,7 @@ export default function HeroSection() {
           <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-gold/10 rounded-full blur-[60px]" />
           <div className="relative z-10 rounded-2xl overflow-hidden bg-surface-low">
             <Image
-              src="/gelato-hero.png"
+              src="/gelato-hero.webp"
               alt="Cono gelato artigianale Gelateria Orso Bianco a Castiglione della Pescaia con cialda logo e sfondo borgo medievale"
               width={800}
               height={1067}
