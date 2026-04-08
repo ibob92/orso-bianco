@@ -66,6 +66,7 @@ const jsonLd = {
       name: "Gelateria Orso Bianco",
       alternateName: "Orso Bianco Gelateria Artigianale",
       url: SITE_URL,
+      logo: `${SITE_URL}/logo.jpg`,
       foundingDate: "1974",
       founder: [
         { "@id": `${SITE_URL}/#carmine` },
