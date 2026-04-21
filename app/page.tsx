@@ -295,6 +295,34 @@ const pressArticles = [
   },
 ];
 
+const galleryImages = [
+  {
+    src: "/fondatori-casa-sanremo.jpg",
+    alt: "Carmine e Sara alla Gelateria Orso Bianco",
+    className: "md:col-span-2 md:row-span-2",
+  },
+  {
+    src: "/ig/post-0.jpg",
+    alt: "Scatto lifestyle Gelateria Orso Bianco",
+    className: "",
+  },
+  {
+    src: "/ig/post-1.jpg",
+    alt: "Dettaglio del mondo Orso Bianco",
+    className: "",
+  },
+  {
+    src: "/ig/post-2.jpg",
+    alt: "Momento del locale Gelateria Orso Bianco",
+    className: "",
+  },
+  {
+    src: "/ig/post-3.jpg",
+    alt: "Atmosfera Gelateria Orso Bianco a Castiglione della Pescaia",
+    className: "md:col-span-2",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -311,32 +339,42 @@ export default function Home() {
         {/* La Nostra Storia — SEO content block */}
         <section id="storia" className="bg-surface">
           <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
-              {/* Photo */}
-              <div className="relative">
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gold/10 rounded-full blur-[60px]" />
-                <div className="relative rounded-2xl overflow-hidden shadow-elevated">
-                  <Image
-                    src="/fondatori-casa-sanremo.jpg"
-                    alt="Carmine Marsella e Sara Masci, titolari della Gelateria Orso Bianco, a Casa Sanremo"
-                    width={960}
-                    height={1280}
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center mb-12 md:mb-16">
+              <div className="relative rounded-2xl overflow-hidden shadow-elevated min-h-[260px] md:min-h-[420px]">
+                <Image
+                  src="/fondatori-casa-sanremo.jpg"
+                  alt="Carmine Marsella e Sara Masci, titolari della Gelateria Orso Bianco, a Casa Sanremo"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
               </div>
 
-              {/* Text */}
-              <div>
-                <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
-                  La nostra storia
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight mb-6">
+              <div className="text-center px-2 md:px-4 py-4 md:py-0">
+                <h2 className="font-serif text-3xl md:text-4xl xl:text-5xl text-primary leading-tight max-w-sm">
                   Doveva essere solo una sosta.
-                  <em className="block mt-1">È diventata una vita intera.</em>
+                  <em className="block mt-2">È diventata una vita intera.</em>
                 </h2>
+              </div>
 
-                <div className="space-y-5 text-on-surface-variant leading-relaxed text-base md:text-lg">
+              <div className="relative rounded-2xl overflow-hidden shadow-elevated min-h-[260px] md:min-h-[420px]">
+                <Image
+                  src="/gelato-hero.webp"
+                  alt="Gelato artigianale Orso Bianco nel cuore di Castiglione della Pescaia"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-5">
+                La nostra storia
+              </p>
+
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-12 text-on-surface-variant leading-relaxed text-base md:text-lg">
+                <div className="space-y-5">
                   <p>
                     Carmine e Sara avevano diciotto e diciassette anni. Tornavano da Torino
                     verso Frosinone quando decisero di fermarsi lungo la strada. Un pit stop.
@@ -369,7 +407,9 @@ export default function Home() {
                     accanto alla loro attività. Da lì nacque qualcosa. Un interesse.
                     Prima un&apos;esperienza da dipendenti. Poi una passione. Infine, una scelta.
                   </p>
+                </div>
 
+                <div className="space-y-5">
                   <p>
                     Nel 2013 rilevarono quella stessa gelateria, che da allora è diventata
                     la loro casa. Partendo da zero. Senza corsi. Senza scorciatoie.
@@ -388,40 +428,28 @@ export default function Home() {
                     Gelateria ufficiale di Casa Sanremo 2024, 2025 e 2026.
                     Best Gelateria in Maremma 2020, 2021, 2022 e 2023.
                   </p>
-                </div>
 
-                <div className="mt-8 rounded-2xl border border-gold/20 bg-surface-lowest p-6 shadow-ambient">
-                  <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
-                    Una promessa mantenuta
-                  </p>
-                  <p className="font-serif text-2xl md:text-3xl text-primary leading-tight">
-                    Qui non è solo gelato.
-                  </p>
-                  <p className="text-on-surface-variant text-lg mt-2">
-                    È una promessa mantenuta.
-                  </p>
-                </div>
-
-                <div className="mt-8 border-l-2 border-gold/30 pl-5 md:pl-6">
-                  <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
-                    La nostra filosofia
-                  </p>
-                  <div className="space-y-4 text-on-surface-variant leading-relaxed text-base md:text-lg">
-                    <p>
-                      Oggi, dopo più di dieci anni di esperienza, la nostra idea di gelato
-                      nasce da una ricerca attenta delle materie prime. Selezioniamo ingredienti
-                      di qualità, con cura e rispetto.
+                  <div className="pt-2 border-l-2 border-gold/30 pl-5 md:pl-6">
+                    <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                      La nostra filosofia
                     </p>
-                    <p>
-                      Ma non ci siamo mai fermati solo al territorio. Siamo sempre stati curiosi,
-                      appassionati di viaggi, alla ricerca di sapori, prodotti e ispirazioni
-                      da ogni parte. Perché crediamo che la qualità non abbia confini,
-                      e che ogni ingrediente possa raccontare una storia.
-                    </p>
-                    <p>
-                      È così che ogni giorno prendono forma i nostri gusti:
-                      tra tradizione, ricerca e identità.
-                    </p>
+                    <div className="space-y-4">
+                      <p>
+                        Oggi, dopo più di dieci anni di esperienza, la nostra idea di gelato
+                        nasce da una ricerca attenta delle materie prime. Selezioniamo ingredienti
+                        di qualità, con cura e rispetto.
+                      </p>
+                      <p>
+                        Ma non ci siamo mai fermati solo al territorio. Siamo sempre stati curiosi,
+                        appassionati di viaggi, alla ricerca di sapori, prodotti e ispirazioni
+                        da ogni parte. Perché crediamo che la qualità non abbia confini,
+                        e che ogni ingrediente possa raccontare una storia.
+                      </p>
+                      <p>
+                        È così che ogni giorno prendono forma i nostri gusti:
+                        tra tradizione, ricerca e identità.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -472,6 +500,44 @@ export default function Home() {
             {gustiData.map((gusto) => (
               <GustoCard key={gusto.name} {...gusto} />
             ))}
+          </div>
+        </section>
+
+        {/* Gallery */}
+        <section className="bg-surface">
+          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-14">
+              <div>
+                <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                  Gallery
+                </p>
+                <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight">
+                  Uno sguardo al nostro <em>mondo</em>
+                </h2>
+              </div>
+              <p className="text-on-surface-variant max-w-2xl leading-relaxed">
+                Una selezione di immagini che racconta non solo il gelato, ma anche
+                l&apos;atmosfera, le persone e il locale. Questa sezione è già pronta per
+                accogliere i nuovi scatti che aggiorneremo nei prossimi giorni.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[220px] md:auto-rows-[240px] gap-4 md:gap-5">
+              {galleryImages.map((image) => (
+                <div
+                  key={image.src}
+                  className={`relative overflow-hidden rounded-2xl bg-surface-lowest shadow-ambient ${image.className}`}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
