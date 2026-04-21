@@ -7,17 +7,20 @@ export default function HeroSection() {
         {/* Text */}
         <div className="z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-5">
-            Gelateria Orso Bianco · Castiglione della Pescaia
+            dal 1974 · Castiglione della Pescaia
           </p>
-          <h1 className="font-serif text-4xl md:text-6xl text-primary leading-[1.16] tracking-tight mb-8 max-w-3xl">
-            <span className="block">Due ragazzi, una scelta nata quasi per caso.</span>
-            <span className="block mt-3">Poi l&apos;incontro con questo luogo, il mare, le persone.</span>
-            <em className="block mt-3">E una passione diventata vita.</em>
+          <h1 className="font-serif text-5xl md:text-7xl text-primary leading-[1.08] tracking-tight mb-6">
+            L&apos;Arte del{" "}
+            <em className="block">Gelato Artigianale</em>
           </h1>
-          <p className="text-on-surface-variant text-xl md:text-2xl leading-relaxed max-w-2xl mb-10">
-            Dal 1974, una storia che continua ogni giorno,
-            fino a diventare gelateria ufficiale di <em>Casa Sanremo</em>.
-          </p>
+          <div className="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-2xl mb-10 space-y-3">
+            <p>Due ragazzi, una scelta nata quasi per caso.</p>
+            <p>Poi l&apos;incontro con questo luogo, il mare, le persone.</p>
+            <p>
+              E una passione diventata vita, fino a diventare gelateria ufficiale di{" "}
+              <em>Casa Sanremo</em>.
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#gusti"
