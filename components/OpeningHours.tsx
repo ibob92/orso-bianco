@@ -84,7 +84,6 @@ function HoursTable({ title, rows }: { title: string; rows: DayRow[] }) {
 }
 
 export default function OpeningHours() {
-  const summerRows = buildRows(SUMMER_HOURS);
   const winterRows = buildRows(WINTER_HOURS);
 
   return (
@@ -105,9 +104,8 @@ export default function OpeningHours() {
             <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight mb-6">
               Vieni a <em>trovarci</em>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="max-w-md">
               <HoursTable title="Orari attuali" rows={winterRows} />
-              <HoursTable title="Weekend e giorni di punta" rows={summerRows.filter((row) => ["Venerdì", "Sabato", "Domenica"].includes(row.label))} />
             </div>
           </div>
 
