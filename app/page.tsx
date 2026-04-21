@@ -145,27 +145,27 @@ const jsonLd = {
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday",
-          ],
-          opens: "13:00",
-          closes: "24:00",
-          validFrom: "2026-06-01",
-          validThrough: "2026-09-30",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          opens: "14:00",
+          closes: "19:00",
         },
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Friday", "Saturday", "Sunday"],
+          dayOfWeek: ["Friday"],
           opens: "13:30",
-          closes: "18:30",
-          validFrom: "2026-10-01",
-          validThrough: "2027-05-31",
+          closes: "19:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Saturday"],
+          opens: "13:00",
+          closes: "20:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Sunday"],
+          opens: "13:30",
+          closes: "20:00",
         },
       ],
       hasMenu: {
@@ -332,23 +332,126 @@ export default function Home() {
                   La nostra storia
                 </p>
                 <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight mb-6">
-                  Un pit stop che è durato <em>una vita</em>
+                  Doveva essere solo una sosta.
+                  <em className="block mt-1">È diventata una vita intera.</em>
                 </h2>
-                <div className="space-y-4 text-on-surface-variant leading-relaxed">
+
+                <div className="space-y-5 text-on-surface-variant leading-relaxed text-base md:text-lg">
                   <p>
                     Carmine e Sara avevano diciotto e diciassette anni. Tornavano da Torino
-                    verso Frosinone e decisero di fare un pit stop per strada. Si fermarono
-                    a Castiglione della Pescaia, e quel posto li folgorò. Si promisero che
-                    un giorno sarebbero tornati per restare.
+                    verso Frosinone quando decisero di fermarsi lungo la strada. Un pit stop.
+                    Castiglione della Pescaia, fino ad allora un posto a loro sconosciuto.
+                    Bastò una passeggiata tra il borgo e il lungomare per restarne folgorati.
+                    Si promisero che un giorno sarebbero tornati. Per restare.
                   </p>
+
                   <p>
-                    L&apos;hanno fatto davvero. Nel 2013 hanno rilevato una gelateria storica
-                    sul lungomare, partendo da zero — nessun corso, nessuna scorciatoia.
-                    Hanno imparato da autodidatti, cercando la loro ricetta fra latte, zucchero
-                    e panna. Ci sono voluti cinque anni per trovarla. Oggi l&apos;Orso Bianco
-                    è la loro casa.
+                    Prima, però, la vita li ha portati altrove. La loro prima esperienza
+                    inizia all&apos;estero, lontani da casa. Lì hanno lavorato, imparato,
+                    fatto sacrifici e soprattutto messo da parte ogni risparmio.
+                    Carmine inseguiva la sua passione per il calcio, che lo ha portato fino
+                    a vivere un&apos;esperienza in Irlanda. Sara coltivava la sua passione
+                    per l&apos;estetica, il trucco e la bellezza. Due strade diverse,
+                    ma la stessa voglia di costruire qualcosa.
+                  </p>
+
+                  <p>
+                    Erano partiti con un&apos;idea ben precisa: vivere un&apos;esperienza all&apos;estero,
+                    crescere, aprirsi a una nuova lingua e a una nuova cultura, per poi tornare
+                    in Italia, costruire un progetto comune e provarci davvero. E poi, quel ricordo.
+                    Quel luogo, sul litorale toscano, che non avevano mai dimenticato.
+                  </p>
+
+                  <p>
+                    Nel 2011 decisero di tornare in Italia e di aprire una pizzeria-ristorante,
+                    il loro primo progetto, che durò solo una stagione. L&apos;anno successivo,
+                    quasi per caso, iniziarono a vivere da vicino la realtà della gelateria
+                    accanto alla loro attività. Da lì nacque qualcosa. Un interesse.
+                    Prima un&apos;esperienza da dipendenti. Poi una passione. Infine, una scelta.
+                  </p>
+
+                  <p>
+                    Nel 2013 rilevarono quella stessa gelateria, che da allora è diventata
+                    la loro casa. Partendo da zero. Senza corsi. Senza scorciatoie.
+                    Senza certezze. Solo passione, sacrificio e la voglia di costruire
+                    qualcosa di loro, tra latte, zucchero e panna.
+                  </p>
+
+                  <p>
+                    Ci sono voluti anni. Giorni lunghi, spesso oltre le 18 o 19 ore di lavoro,
+                    senza pause settimanali. Stagioni intense. Errori. Ripartenze.
+                    Ma quella strada li ha portati lontano.
+                  </p>
+
+                  <p>
+                    Oggi quella promessa ha un nome: <strong>Orso Bianco</strong>.
+                    Gelateria ufficiale di Casa Sanremo 2024, 2025 e 2026.
+                    Best Gelateria in Maremma 2020, 2021, 2022 e 2023.
                   </p>
                 </div>
+
+                <div className="mt-8 rounded-2xl border border-gold/20 bg-surface-lowest p-6 shadow-ambient">
+                  <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                    Una promessa mantenuta
+                  </p>
+                  <p className="font-serif text-2xl md:text-3xl text-primary leading-tight">
+                    Qui non è solo gelato.
+                  </p>
+                  <p className="text-on-surface-variant text-lg mt-2">
+                    È una promessa mantenuta.
+                  </p>
+                </div>
+
+                <div className="mt-8 border-l-2 border-gold/30 pl-5 md:pl-6">
+                  <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                    La nostra filosofia
+                  </p>
+                  <div className="space-y-4 text-on-surface-variant leading-relaxed text-base md:text-lg">
+                    <p>
+                      Oggi, dopo più di dieci anni di esperienza, la nostra idea di gelato
+                      nasce da una ricerca attenta delle materie prime. Selezioniamo ingredienti
+                      di qualità, con cura e rispetto.
+                    </p>
+                    <p>
+                      Ma non ci siamo mai fermati solo al territorio. Siamo sempre stati curiosi,
+                      appassionati di viaggi, alla ricerca di sapori, prodotti e ispirazioni
+                      da ogni parte. Perché crediamo che la qualità non abbia confini,
+                      e che ogni ingrediente possa raccontare una storia.
+                    </p>
+                    <p>
+                      È così che ogni giorno prendono forma i nostri gusti:
+                      tra tradizione, ricerca e identità.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Oltre il gelato */}
+        <section className="bg-surface-low">
+          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="max-w-4xl">
+              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                Oltre il gelato
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight mb-8">
+                Il nostro mondo non si ferma al gelato artigianale.
+              </h2>
+              <div className="space-y-5 text-on-surface-variant text-lg md:text-2xl leading-relaxed">
+                <p>
+                  Ogni giorno prepariamo una selezione di prodotti pensati
+                  per essere gustati fronte mare:
+                </p>
+                <ul className="space-y-4 pl-6 list-disc marker:text-gold text-primary text-xl md:text-3xl leading-relaxed">
+                  <li>Yogurt soft</li>
+                  <li>Crepes</li>
+                  <li>Granite di yogurt</li>
+                  <li>Caffetteria</li>
+                  <li>Macedonie fresche</li>
+                  <li>Frappè</li>
+                </ul>
               </div>
             </div>
           </div>

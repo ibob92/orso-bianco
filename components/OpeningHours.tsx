@@ -1,25 +1,25 @@
 import OpeningStatus, { SeasonHours } from "./OpeningStatus";
 
-// Summer: open daily 13:00-24:00 (from TripAdvisor)
-// Winter: weekends only 13:30-18:30 (from Google Maps)
+// Summer: placeholder seasonal schedule, da confermare
+// Current / winter-spring schedule: aggiornato da screenshot attività
 const SUMMER_HOURS: SeasonHours = {
-  monday: [13, 24],
-  tuesday: [13, 24],
-  wednesday: [13, 24],
-  thursday: [13, 24],
-  friday: [13, 24],
-  saturday: [13, 24],
-  sunday: [13, 24],
+  monday: [14, 19],
+  tuesday: [14, 19],
+  wednesday: [14, 19],
+  thursday: [14, 19],
+  friday: [13.5, 19],
+  saturday: [13, 20],
+  sunday: [13.5, 20],
 };
 
 const WINTER_HOURS: SeasonHours = {
-  monday: null,
-  tuesday: null,
-  wednesday: null,
-  thursday: null,
-  friday: [13.5, 18.5],
-  saturday: [13.5, 18.5],
-  sunday: [13.5, 18.5],
+  monday: [14, 19],
+  tuesday: [14, 19],
+  wednesday: [14, 19],
+  thursday: [14, 19],
+  friday: [13.5, 19],
+  saturday: [13, 20],
+  sunday: [13.5, 20],
 };
 
 type DayRow = {
@@ -106,8 +106,8 @@ export default function OpeningHours() {
               Vieni a <em>trovarci</em>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <HoursTable title="Estate (giu – set)" rows={summerRows} />
-              <HoursTable title="Inverno (ott – mag)" rows={winterRows} />
+              <HoursTable title="Orari attuali" rows={winterRows} />
+              <HoursTable title="Weekend e giorni di punta" rows={summerRows.filter((row) => ["Venerdì", "Sabato", "Domenica"].includes(row.label))} />
             </div>
           </div>
 

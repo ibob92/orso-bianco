@@ -7,16 +7,16 @@ export default function HeroSection() {
         {/* Text */}
         <div className="z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-5">
-            dal 1974 · Castiglione della Pescaia
+            Gelateria Orso Bianco · Castiglione della Pescaia
           </p>
-          <h1 className="font-serif text-5xl md:text-7xl text-primary leading-[1.08] tracking-tight mb-6">
-            L&apos;Arte del{" "}
-            <em className="block">Gelato Artigianale</em>
+          <h1 className="font-serif text-4xl md:text-6xl text-primary leading-[1.16] tracking-tight mb-8 max-w-3xl">
+            <span className="block">Due ragazzi, una scelta nata quasi per caso.</span>
+            <span className="block mt-3">Poi l&apos;incontro con questo luogo, il mare, le persone.</span>
+            <em className="block mt-3">E una passione diventata vita.</em>
           </h1>
-          <p className="text-on-surface-variant text-lg leading-relaxed max-w-md mb-8">
-            Dal 1974 nel cuore di Castiglione della Pescaia, in Maremma Toscana.
-            Gelato artigianale con materie prime d&apos;eccellenza.
-            Gelateria ufficiale di Casa Sanremo.
+          <p className="text-on-surface-variant text-xl md:text-2xl leading-relaxed max-w-2xl mb-10">
+            Dal 1974, una storia che continua ogni giorno,
+            fino a diventare gelateria ufficiale di <em>Casa Sanremo</em>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
