@@ -6,6 +6,7 @@ import InstagramFeed from "@/components/InstagramFeed";
 import MapCard from "@/components/MapCard";
 import OpeningHours from "@/components/OpeningHours";
 import Footer from "@/components/Footer";
+import GalleryCarousel from "@/components/GalleryCarousel";
 
 const gustiData = [
   {
@@ -295,33 +296,6 @@ const pressArticles = [
   },
 ];
 
-const galleryImages = [
-  {
-    src: "/fondatori-casa-sanremo.jpg",
-    alt: "Carmine e Sara alla Gelateria Orso Bianco",
-    className: "md:col-span-2 md:row-span-2",
-  },
-  {
-    src: "/ig/post-0.jpg",
-    alt: "Scatto lifestyle Gelateria Orso Bianco",
-    className: "",
-  },
-  {
-    src: "/ig/post-1.jpg",
-    alt: "Dettaglio del mondo Orso Bianco",
-    className: "",
-  },
-  {
-    src: "/ig/post-2.jpg",
-    alt: "Momento del locale Gelateria Orso Bianco",
-    className: "",
-  },
-  {
-    src: "/ig/post-3.jpg",
-    alt: "Atmosfera Gelateria Orso Bianco a Castiglione della Pescaia",
-    className: "md:col-span-2",
-  },
-];
 
 export default function Home() {
   return (
@@ -512,32 +486,17 @@ export default function Home() {
                   Gallery
                 </p>
                 <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight">
-                  Uno sguardo al nostro <em>mondo</em>
+                  Uno spazio pronto per i nuovi <em>scatti</em>
                 </h2>
               </div>
               <p className="text-on-surface-variant max-w-2xl leading-relaxed">
-                Una selezione di immagini che racconta non solo il gelato, ma anche
-                l&apos;atmosfera, le persone e il locale. Questa sezione è già pronta per
-                accogliere i nuovi scatti che aggiorneremo nei prossimi giorni.
+                Per ora qui non mettiamo immagini definitive. Ho predisposto un carosello
+                automatico con placeholder ordinati, così quando arrivano le nuove foto
+                basta sostituire gli slot senza toccare la struttura.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[220px] md:auto-rows-[240px] gap-4 md:gap-5">
-              {galleryImages.map((image) => (
-                <div
-                  key={image.src}
-                  className={`relative overflow-hidden rounded-2xl bg-surface-lowest shadow-ambient ${image.className}`}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 25vw"
-                    className="object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-              ))}
-            </div>
+            <GalleryCarousel />
           </div>
         </section>
 
