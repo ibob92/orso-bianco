@@ -2,9 +2,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import GustoCard from "@/components/GustoCard";
-import InstagramFeed from "@/components/InstagramFeed";
-import MapCard from "@/components/MapCard";
-import OpeningHours from "@/components/OpeningHours";
+import ContactHub from "@/components/ContactHub";
 import Footer from "@/components/Footer";
 
 const gustiData = [
@@ -515,29 +513,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Casa Sanremo + Contatti */}
+        {/* Contatti — hub unico (orari + mappa + instagram) */}
         <section id="contatti" className="bg-surface-low">
           <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
-            <div className="text-center mb-10 md:mb-14">
-              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
-                Un palco nazionale
-              </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-primary">
-                La Gelateria di <em>Casa Sanremo</em>
-              </h2>
-              <p className="text-on-surface-variant mt-3">
-                Fieri di essere la gelateria ufficiale di Casa Sanremo nel 2024, 2025 e 2026.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <InstagramFeed />
-              <MapCard />
-            </div>
+            <ContactHub />
           </div>
         </section>
-
-        <OpeningHours />
 
         {/* Rassegna Stampa */}
         <section id="press" className="bg-surface">
