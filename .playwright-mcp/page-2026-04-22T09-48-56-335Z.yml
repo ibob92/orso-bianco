@@ -1,0 +1,409 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Orso Bianco" [ref=e4] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e5]:
+        - link "La Storia" [ref=e6] [cursor=pointer]:
+          - /url: "#storia"
+        - link "I Gusti" [ref=e7] [cursor=pointer]:
+          - /url: "#gusti"
+        - link "Orari" [ref=e8] [cursor=pointer]:
+          - /url: "#orari"
+        - link "Contatti" [ref=e9] [cursor=pointer]:
+          - /url: "#contatti"
+      - link "Dove Siamo" [ref=e10] [cursor=pointer]:
+        - /url: "#contatti"
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: dal 1974 · Castiglione della Pescaia
+        - heading "L'Arte del Gelato Artigianale" [level=1] [ref=e16]:
+          - text: L'Arte del
+          - emphasis [ref=e17]: Gelato Artigianale
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: Due ragazzi, una scelta nata quasi per caso.
+          - paragraph [ref=e20]: Poi l'incontro con questo luogo, il mare, le persone.
+          - paragraph [ref=e21]:
+            - text: E una passione diventata vita, fino a diventare gelateria ufficiale di
+            - emphasis [ref=e22]: Casa Sanremo
+            - text: .
+        - generic [ref=e23]:
+          - link "Scopri i Gusti →" [ref=e24] [cursor=pointer]:
+            - /url: "#gusti"
+            - text: Scopri i Gusti
+            - generic [ref=e25]: →
+          - link "Seguici su Instagram" [ref=e26] [cursor=pointer]:
+            - /url: https://www.instagram.com/orsobianco_/
+      - img "Cono gelato artigianale Gelateria Orso Bianco a Castiglione della Pescaia con cialda logo e sfondo borgo medievale" [ref=e31]
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - img "Carmine Marsella e Sara Masci, titolari della Gelateria Orso Bianco, a Casa Sanremo" [ref=e36]
+        - heading "Doveva essere solo una sosta. È diventata una vita intera." [level=2] [ref=e38]:
+          - text: Doveva essere solo una sosta.
+          - emphasis [ref=e39]: È diventata una vita intera.
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: La nostra storia
+        - generic [ref=e42]:
+          - paragraph [ref=e43]:
+            - text: Carmine e Sara scoprono
+            - strong [ref=e44]: Castiglione della Pescaia
+            - text: "quasi per caso, durante un viaggio. Una passeggiata, il mare, e una promessa:"
+            - strong [ref=e45]: tornare. Per restare.
+          - paragraph [ref=e46]:
+            - text: "Prima, però, il mondo. L'esperienza all'estero, il lavoro, i sacrifici: Carmine inseguendo la sua passione per il"
+            - strong [ref=e47]: calcio
+            - text: ", Sara coltivando il suo sogno da"
+            - strong [ref=e48]: estetista
+            - text: ". Poi il ritorno in Italia, il primo progetto, e l'incontro con la gelateria. Da lì nasce tutto: prima un lavoro, poi una passione, infine una scelta."
+          - paragraph [ref=e49]:
+            - text: Nel
+            - strong [ref=e50]: "2013"
+            - text: ", dopo l'esperienza da dipendenti, decisero di acquistare la storica gelateria sul lungomare di Castiglione della Pescaia."
+          - paragraph [ref=e51]: Partirono da zero. Senza scorciatoie.
+          - paragraph [ref=e52]: Anni intensi, fatti di sacrificio, errori e ripartenze. Ma anche di crescita, identità e visione.
+          - paragraph [ref=e53]:
+            - text: Oggi Orso Bianco è molto più di una gelateria.
+            - emphasis [ref=e54]: È una promessa mantenuta.
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Casa Sanremo
+            - paragraph [ref=e58]:
+              - text: Gelateria ufficiale
+              - strong [ref=e59]: 2024 · 2025 · 2026
+          - generic [ref=e60]:
+            - paragraph [ref=e61]: Best in Maremma
+            - paragraph [ref=e62]:
+              - strong [ref=e63]: 2020 · 2021 · 2022 · 2023
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - paragraph [ref=e67]: I nostri gusti
+        - heading "I Gusti del Gelato Artigianale Orso Bianco" [level=2] [ref=e68]:
+          - text: I Gusti del
+          - emphasis [ref=e69]: Gelato Artigianale
+          - text: Orso Bianco
+      - generic [ref=e70]:
+        - img "Gelato al pistacchio di Bronte DOP — gusto signature della Gelateria Orso Bianco a Castiglione della Pescaia" [ref=e72]
+        - generic [ref=e73]:
+          - heading "Pistacchio di Bronte DOP" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Tostato a legna e raffinato a pietra. Intenso, persistente, inconfondibile. Dal terreno vulcanico dell'Etna alla nostra mantecatrice.
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - generic [ref=e78]: S
+              - generic [ref=e79]:
+                - paragraph [ref=e80]: Sciass
+                - generic [ref=e81]:
+                  - generic [ref=e82]: ●●●●●
+                  - generic [ref=e83]: agosto 2022
+            - paragraph [ref=e84]: “Degno di nota è il gusto mandorlato al pistacchio. Interessante anche il pompelmo rosa e champagne. Insomma, accoppiate vincenti!”
+            - generic [ref=e85]:
+              - img [ref=e86]
+              - generic [ref=e93]: Recensione Tripadvisor
+      - generic [ref=e94]:
+        - generic [ref=e96]:
+          - heading "Limone, Basilico & Ananas" [level=3] [ref=e97]
+          - paragraph [ref=e98]: L'incontro fra agrumi e erbe aromatiche. Fresco, audace, indimenticabile. Il gusto che ha conquistato Sanremo.
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]: A
+              - generic [ref=e102]:
+                - paragraph [ref=e103]: Alfonso P.
+                - generic [ref=e104]:
+                  - generic [ref=e105]: ●●●●●
+                  - generic [ref=e106]: settembre 2017
+            - paragraph [ref=e107]: “Consiglio vivamente limone ananas e basilico.. un gusto unico ma che esprime quanta passione ci mette il proprietario per distinguersi. Straconsigliato!”
+            - generic [ref=e108]:
+              - img [ref=e109]
+              - generic [ref=e116]: Recensione Tripadvisor
+        - img "Gelato limone basilico e ananas — creazione originale Gelateria Orso Bianco, Maremma Toscana" [ref=e119]
+      - generic [ref=e120]:
+        - img "Gelato al caramello e burro salato con fiocchi di sale — best seller Gelateria Orso Bianco" [ref=e122]
+        - generic [ref=e123]:
+          - heading "Caramello al Burro Salato" [level=3] [ref=e124]
+          - paragraph [ref=e125]: Dolcezza profonda con un pizzico di sale bretone. Il comfort food elevato ad arte.
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e128]: C
+              - generic [ref=e129]:
+                - paragraph [ref=e130]: cosimo m.
+                - generic [ref=e131]:
+                  - generic [ref=e132]: ●●●●●
+                  - generic [ref=e133]: agosto 2021
+            - paragraph [ref=e134]: “Quei pochi gusti il gusto è speciale, in particolare il caramello salato e il cremino. Mia figlia non dico tutte le sere ma quasi!”
+            - generic [ref=e135]:
+              - img [ref=e136]
+              - generic [ref=e143]: Recensione Tripadvisor
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: Oltre il gelato
+        - heading "Il nostro mondo non si ferma al gelato" [level=2] [ref=e148]:
+          - text: Il nostro mondo non si ferma
+          - emphasis [ref=e149]: al gelato
+        - paragraph [ref=e150]: Ogni giorno prepariamo una selezione di prodotti pensati per essere gustati fronte mare.
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - img "Yogurt soft cremoso con frutti di bosco — Gelateria Orso Bianco Castiglione della Pescaia" [ref=e154]
+          - generic [ref=e155]:
+            - heading "Yogurt soft" [level=3] [ref=e156]
+            - paragraph [ref=e157]: Cremoso, fresco, leggero. Servito con frutta di stagione e topping a scelta.
+        - generic [ref=e158]:
+          - img "Crepe dorata con cioccolato e zucchero a velo — Gelateria Orso Bianco" [ref=e160]
+          - generic [ref=e161]:
+            - heading "Crepes" [level=3] [ref=e162]
+            - paragraph [ref=e163]: Sottili, dorate, farcite al momento. Dal cioccolato alla Nutella fino a creazioni stagionali.
+        - generic [ref=e164]:
+          - img "Granita di yogurt con fragola — Gelateria Orso Bianco Maremma" [ref=e166]
+          - generic [ref=e167]:
+            - heading "Granite di yogurt" [level=3] [ref=e168]
+            - paragraph [ref=e169]: La freschezza della granita incontra la cremosità dello yogurt. Perfetta fronte mare.
+        - generic [ref=e170]:
+          - img "Espresso italiano con biscottino amaretto — Gelateria Orso Bianco" [ref=e172]
+          - generic [ref=e173]:
+            - heading "Caffetteria" [level=3] [ref=e174]
+            - paragraph [ref=e175]: Miscela selezionata, espresso italiano. Per una pausa breve o l'inizio della giornata.
+        - generic [ref=e176]:
+          - img "Macedonia di frutta fresca con menta — Gelateria Orso Bianco Castiglione della Pescaia" [ref=e178]
+          - generic [ref=e179]:
+            - heading "Macedonie fresche" [level=3] [ref=e180]
+            - paragraph [ref=e181]: Solo frutta di stagione, tagliata al momento. Il gusto dell'estate in una coppetta.
+        - generic [ref=e182]:
+          - img "Frappè alla vaniglia con panna e caramello — Gelateria Orso Bianco" [ref=e184]
+          - generic [ref=e185]:
+            - heading "Frappè" [level=3] [ref=e186]
+            - paragraph [ref=e187]: Cremoso, goloso, al gusto del giorno. Una coccola veloce da portare in passeggiata.
+    - generic [ref=e190]:
+      - paragraph [ref=e191]: La nostra filosofia
+      - heading "La qualità non ha confini" [level=2] [ref=e192]:
+        - text: La qualità
+        - emphasis [ref=e193]: non ha confini
+      - generic [ref=e194]:
+        - paragraph [ref=e195]:
+          - text: Dopo più di dieci anni di esperienza, la nostra idea di gelato nasce da una
+          - strong [ref=e196]: ricerca attenta delle materie prime
+          - text: . Selezioniamo ingredienti di qualità, con cura e rispetto.
+        - paragraph [ref=e197]:
+          - text: Non ci siamo mai fermati solo al territorio. Siamo curiosi, appassionati di viaggi, alla ricerca di sapori, prodotti e ispirazioni da ogni parte. Perché crediamo che
+          - strong [ref=e198]: la qualità non abbia confini
+          - text: ", e che ogni ingrediente possa raccontare una storia."
+        - paragraph [ref=e199]:
+          - text: "Ogni giorno prendono forma i nostri gusti:"
+          - emphasis [ref=e200]: tra tradizione, ricerca e identità.
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - paragraph [ref=e205]: Gallery
+          - heading "Uno spazio pronto per i nuovi scatti" [level=2] [ref=e206]:
+            - text: Uno spazio pronto per i nuovi
+            - emphasis [ref=e207]: scatti
+        - paragraph [ref=e208]: Per ora qui non mettiamo immagini definitive. Ho predisposto un carosello automatico con placeholder ordinati, così quando arrivano le nuove foto basta sostituire gli slot senza toccare la struttura.
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - paragraph [ref=e217]: Placeholder 01
+                - heading "Foto del locale" [level=3] [ref=e218]
+              - generic [ref=e219]: "01"
+            - generic [ref=e220]:
+              - paragraph [ref=e221]: Slot riservato a uno scatto orizzontale dell'interno o dell'esterno.
+              - generic [ref=e222]: Placeholder pronto da sostituire con la foto finale
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Placeholder 02
+                  - heading [level=3]: Momento al banco
+                - generic: "02"
+              - generic:
+                - paragraph: Slot per una scena viva del servizio o dell'atmosfera del negozio.
+                - generic: Placeholder pronto da sostituire con la foto finale
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Placeholder 03
+                  - heading [level=3]: Dettaglio atmosfera
+                - generic: "03"
+              - generic:
+                - paragraph: Slot per un dettaglio che racconti materiali, luci, insegna o bancone.
+                - generic: Placeholder pronto da sostituire con la foto finale
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Placeholder 04
+                  - heading [level=3]: Team o fondatori
+                - generic: "04"
+              - generic:
+                - paragraph: Slot per una foto di Carmine, Sara o del team nel contesto del locale.
+                - generic: Placeholder pronto da sostituire con la foto finale
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Placeholder 05
+                  - heading [level=3]: Scatto hero del locale
+                - generic: "05"
+              - generic:
+                - paragraph: Slot per l'immagine finale più forte, pronta a sostituire il placeholder.
+                - generic: Placeholder pronto da sostituire con la foto finale
+        - generic [ref=e224]:
+          - paragraph [ref=e225]: Scorrimento automatico
+          - generic [ref=e226]:
+            - button "Vai al placeholder 1" [ref=e227]
+            - button "Vai al placeholder 2" [ref=e228]
+            - button "Vai al placeholder 3" [ref=e229]
+            - button "Vai al placeholder 4" [ref=e230]
+            - button "Vai al placeholder 5" [ref=e231]
+    - generic [ref=e233]:
+      - generic [ref=e234]:
+        - paragraph [ref=e235]: Un palco nazionale
+        - heading "La Gelateria di Casa Sanremo" [level=2] [ref=e236]:
+          - text: La Gelateria di
+          - emphasis [ref=e237]: Casa Sanremo
+        - paragraph [ref=e238]: Fieri di essere la gelateria ufficiale di Casa Sanremo nel 2024, 2025 e 2026.
+      - generic [ref=e239]:
+        - generic [ref=e240]:
+          - generic [ref=e241]:
+            - generic [ref=e243]: 📷
+            - generic [ref=e244]:
+              - paragraph [ref=e245]: "@orsobianco_"
+              - paragraph [ref=e246]: 6.085 follower
+          - generic [ref=e247]:
+            - img "Gelateria Orso Bianco a Casa Sanremo 2026 — Festival di Sanremo"
+            - img "Il team Orso Bianco con Francesco Renga a Casa Sanremo"
+            - img "Gelato artigianale Orso Bianco servito a Casa Sanremo"
+            - img "Gelateria Orso Bianco al Teatro Ariston durante il Festival di Sanremo"
+            - img "Cornetti artigianali e brioches della Gelateria Orso Bianco Castiglione della Pescaia"
+            - img "Carmine Marsella e Sara Masci — titolari Gelateria Orso Bianco dal 2013"
+          - link "Seguici su Instagram" [ref=e249] [cursor=pointer]:
+            - /url: https://www.instagram.com/orsobianco_/
+        - generic [ref=e250]:
+          - iframe [ref=e252]:
+            
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - generic [ref=e255]: ★★★★★
+              - generic [ref=e256]: "4.6"
+              - generic [ref=e257]: su Google
+            - paragraph [ref=e258]: Gelateria Orso Bianco
+            - paragraph [ref=e259]: Via Roma 10-12, Castiglione della Pescaia (GR)
+            - paragraph [ref=e260]: +39 0564 934656
+            - link "Indicazioni Stradali ↗" [ref=e261] [cursor=pointer]:
+              - /url: https://www.google.com/maps/place/Gelateria+Orso+Bianco/@42.7636,10.8826,17z/
+    - generic [ref=e264]:
+      - generic [ref=e265]:
+        - generic [ref=e266]:
+          - paragraph [ref=e267]: Orari di apertura
+          - status "Gelateria chiusa ora" [ref=e268]: Chiuso ora
+        - heading "Vieni a trovarci" [level=2] [ref=e270]:
+          - text: Vieni a
+          - emphasis [ref=e271]: trovarci
+        - generic [ref=e273]:
+          - paragraph [ref=e274]: Orari attuali
+          - list [ref=e275]:
+            - listitem [ref=e276]:
+              - generic [ref=e277]: Lunedì
+              - generic [ref=e278]: 14:00 – 19:00
+            - listitem [ref=e279]:
+              - generic [ref=e280]: Martedì
+              - generic [ref=e281]: 14:00 – 19:00
+            - listitem [ref=e282]:
+              - generic [ref=e283]: Mercoledì
+              - generic [ref=e284]: 14:00 – 19:00
+            - listitem [ref=e285]:
+              - generic [ref=e286]: Giovedì
+              - generic [ref=e287]: 14:00 – 19:00
+            - listitem [ref=e288]:
+              - generic [ref=e289]: Venerdì
+              - generic [ref=e290]: 13:30 – 19:00
+            - listitem [ref=e291]:
+              - generic [ref=e292]: Sabato
+              - generic [ref=e293]: 13:00 – 20:00
+            - listitem [ref=e294]:
+              - generic [ref=e295]: Domenica
+              - generic [ref=e296]: 13:30 – 20:00
+      - generic [ref=e297]:
+        - paragraph [ref=e298]: Come trovarci
+        - heading "Sul lungomare di Castiglione" [level=2] [ref=e299]:
+          - text: Sul lungomare di
+          - emphasis [ref=e300]: Castiglione
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - paragraph [ref=e303]: Indirizzo
+            - generic [ref=e304]:
+              - text: Via Roma 10-12
+              - text: 58043 Castiglione della Pescaia (GR)
+          - generic [ref=e305]:
+            - paragraph [ref=e306]: Telefono
+            - link "+39 0564 934656" [ref=e307] [cursor=pointer]:
+              - /url: tel:+390564934656
+          - generic [ref=e308]:
+            - paragraph [ref=e309]: In breve
+            - list [ref=e310]:
+              - listitem [ref=e311]: Sul lungomare di Castiglione della Pescaia
+              - listitem [ref=e312]: A pochi passi dal porto turistico
+              - listitem [ref=e313]: Raggiungibile a piedi dal centro storico
+          - link "Apri su Google Maps →" [ref=e314] [cursor=pointer]:
+            - /url: https://www.google.com/maps/place/Gelateria+Orso+Bianco/@42.7636,10.8826,17z/
+            - text: Apri su Google Maps
+            - generic [ref=e315]: →
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - paragraph [ref=e319]: Rassegna Stampa
+        - heading "Hanno raccontato di noi" [level=2] [ref=e320]:
+          - text: Hanno
+          - emphasis [ref=e321]: raccontato
+          - text: di noi
+      - generic [ref=e322]:
+        - 'link "Anteprima articolo: A Sanremo il gelato che arriva dalla Maremma Il Giunco 5 febbraio 2025 A Sanremo il gelato che arriva dalla Maremma L''Orso Bianco torna protagonista al Festival, portando l''artigianalità maremmana a Casa Sanremo per il secondo anno consecutivo. Leggi l''articolo →" [ref=e323] [cursor=pointer]':
+          - /url: https://www.ilgiunco.net/2025/02/05/a-sanremo-il-gelato-che-arriva-dalla-maremma-lorso-bianco-protagonista-al-festival/
+          - 'img "Anteprima articolo: A Sanremo il gelato che arriva dalla Maremma" [ref=e325]'
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - generic [ref=e328]: Il Giunco
+              - generic [ref=e329]: 5 febbraio 2025
+            - heading "A Sanremo il gelato che arriva dalla Maremma" [level=3] [ref=e330]
+            - paragraph [ref=e331]: L'Orso Bianco torna protagonista al Festival, portando l'artigianalità maremmana a Casa Sanremo per il secondo anno consecutivo.
+            - generic [ref=e332]:
+              - text: Leggi l'articolo
+              - generic [ref=e333]: →
+        - 'link "Anteprima articolo: Orso Bianco, mezzo secolo di storia. E sempre per tutti i gusti La Nazione 3 settembre 2024 Orso Bianco, mezzo secolo di storia. E sempre per tutti i gusti Cinquant''anni di gelato artigianale a Castiglione della Pescaia, raccontati attraverso le tre generazioni che ne hanno scritto la storia. Leggi l''articolo →" [ref=e334] [cursor=pointer]':
+          - /url: https://www.lanazione.it/grosseto/cronaca/orso-bianco-mezzo-secolo-di-storia-e-sempre-per-tutti-i-gusti-853811e6
+          - 'img "Anteprima articolo: Orso Bianco, mezzo secolo di storia. E sempre per tutti i gusti" [ref=e336]'
+          - generic [ref=e337]:
+            - generic [ref=e338]:
+              - generic [ref=e339]: La Nazione
+              - generic [ref=e340]: 3 settembre 2024
+            - heading "Orso Bianco, mezzo secolo di storia. E sempre per tutti i gusti" [level=3] [ref=e341]
+            - paragraph [ref=e342]: Cinquant'anni di gelato artigianale a Castiglione della Pescaia, raccontati attraverso le tre generazioni che ne hanno scritto la storia.
+            - generic [ref=e343]:
+              - text: Leggi l'articolo
+              - generic [ref=e344]: →
+        - 'link "Anteprima articolo: Il gelato maremmano conquista Sanremo Il Giunco 2 febbraio 2024 Il gelato maremmano conquista Sanremo Carmine e Sara protagonisti al Festival: la gelateria di Castiglione porta le sue creazioni a Casa Sanremo. Leggi l''articolo →" [ref=e345] [cursor=pointer]':
+          - /url: https://www.ilgiunco.net/2024/02/02/il-gelato-maremmano-conquista-sanremo-lorso-bianco-protagonista-del-festival/
+          - 'img "Anteprima articolo: Il gelato maremmano conquista Sanremo" [ref=e347]'
+          - generic [ref=e348]:
+            - generic [ref=e349]:
+              - generic [ref=e350]: Il Giunco
+              - generic [ref=e351]: 2 febbraio 2024
+            - heading "Il gelato maremmano conquista Sanremo" [level=3] [ref=e352]
+            - paragraph [ref=e353]: "Carmine e Sara protagonisti al Festival: la gelateria di Castiglione porta le sue creazioni a Casa Sanremo."
+            - generic [ref=e354]:
+              - text: Leggi l'articolo
+              - generic [ref=e355]: →
+  - contentinfo [ref=e356]:
+    - generic [ref=e357]:
+      - generic [ref=e358]:
+        - paragraph [ref=e359]: Orso Bianco
+        - paragraph [ref=e360]: © 2026 · dal 1974 nel cuore della Maremma
+      - generic [ref=e361]:
+        - link "Instagram" [ref=e362] [cursor=pointer]:
+          - /url: https://www.instagram.com/orsobianco_/
+        - link "Privacy" [ref=e363] [cursor=pointer]:
+          - /url: "#"
+        - link "Contatti" [ref=e364] [cursor=pointer]:
+          - /url: "#contatti"
+  - button "Open Next.js Dev Tools" [ref=e370] [cursor=pointer]:
+    - img [ref=e371]
+  - alert [ref=e374]

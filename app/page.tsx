@@ -6,7 +6,6 @@ import InstagramFeed from "@/components/InstagramFeed";
 import MapCard from "@/components/MapCard";
 import OpeningHours from "@/components/OpeningHours";
 import Footer from "@/components/Footer";
-import GalleryCarousel from "@/components/GalleryCarousel";
 
 const gustiData = [
   {
@@ -525,29 +524,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Gallery */}
-        <section className="bg-surface">
-          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-14">
-              <div>
-                <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
-                  Gallery
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight">
-                  Uno spazio pronto per i nuovi <em>scatti</em>
-                </h2>
-              </div>
-              <p className="text-on-surface-variant max-w-2xl leading-relaxed">
-                Per ora qui non mettiamo immagini definitive. Ho predisposto un carosello
-                automatico con placeholder ordinati, così quando arrivano le nuove foto
-                basta sostituire gli slot senza toccare la struttura.
-              </p>
-            </div>
-
-            <GalleryCarousel />
           </div>
         </section>
 
