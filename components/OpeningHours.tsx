@@ -152,7 +152,7 @@ export default function OpeningHours() {
               </div>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Gelateria+Orso+Bianco+Via+Roma+10+Castiglione+della+Pescaia"
+                href="https://www.google.com/maps/place/Gelateria+Orso+Bianco/@42.7636,10.8826,17z/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full bg-primary text-on-primary px-6 py-3 rounded-full text-sm font-semibold hover:bg-primary-container transition-colors"

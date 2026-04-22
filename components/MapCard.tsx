@@ -2,7 +2,7 @@ const MAPS_EMBED_URL =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d741.5!2d10.8826!3d42.7636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132870dca1c1e6e5%3A0x5e5b5e5b5e5b5e5b!2sGelateria%20Orso%20Bianco!5e0!3m2!1sit!2sit";
 
 const MAPS_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir/?api=1&destination=Gelateria+Orso+Bianco+Via+Roma+Castiglione+della+Pescaia";
+  "https://www.google.com/maps/place/Gelateria+Orso+Bianco/@42.7636,10.8826,17z/";
 
 export default function MapCard() {
   return (
