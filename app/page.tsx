@@ -184,26 +184,14 @@ const jsonLd = {
       openingHoursSpecification: [
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           opens: "14:00",
-          closes: "19:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Friday"],
-          opens: "13:30",
-          closes: "19:00",
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Saturday"],
-          opens: "13:00",
           closes: "20:00",
         },
         {
           "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Sunday"],
-          opens: "13:30",
+          dayOfWeek: ["Saturday", "Sunday"],
+          opens: "13:00",
           closes: "20:00",
         },
       ],

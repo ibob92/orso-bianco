@@ -1,25 +1,24 @@
 import OpeningStatus, { SeasonHours } from "./OpeningStatus";
 
-// Summer: placeholder seasonal schedule, da confermare
-// Current / winter-spring schedule: aggiornato da screenshot attività
+// Settimana: lun-ven 14-20, weekend (sab e dom) 13-20
 const SUMMER_HOURS: SeasonHours = {
-  monday: [14, 19],
-  tuesday: [14, 19],
-  wednesday: [14, 19],
-  thursday: [14, 19],
-  friday: [13.5, 19],
+  monday: [14, 20],
+  tuesday: [14, 20],
+  wednesday: [14, 20],
+  thursday: [14, 20],
+  friday: [14, 20],
   saturday: [13, 20],
-  sunday: [13.5, 20],
+  sunday: [13, 20],
 };
 
 const WINTER_HOURS: SeasonHours = {
-  monday: [14, 19],
-  tuesday: [14, 19],
-  wednesday: [14, 19],
-  thursday: [14, 19],
-  friday: [13.5, 19],
+  monday: [14, 20],
+  tuesday: [14, 20],
+  wednesday: [14, 20],
+  thursday: [14, 20],
+  friday: [14, 20],
   saturday: [13, 20],
-  sunday: [13.5, 20],
+  sunday: [13, 20],
 };
 
 type DayRow = {
