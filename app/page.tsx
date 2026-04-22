@@ -313,30 +313,20 @@ export default function Home() {
         {/* La Nostra Storia — SEO content block */}
         <section id="storia" className="bg-surface">
           <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center mb-12 md:mb-16">
-              <div className="relative rounded-2xl overflow-hidden shadow-elevated min-h-[260px] md:min-h-[420px]">
-                <Image
-                  src="/fondatori-casa-sanremo.jpg"
-                  alt="Carmine Marsella e Sara Masci, titolari della Gelateria Orso Bianco, a Casa Sanremo"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="text-center px-2 md:px-4 py-4 md:py-0">
-                <h2 className="font-serif text-3xl md:text-4xl xl:text-5xl text-primary leading-tight max-w-sm">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-center mb-12 md:mb-16">
+              <div className="text-center md:text-right px-2 md:px-4 py-4 md:py-0 order-2 md:order-1">
+                <h2 className="font-serif text-3xl md:text-4xl xl:text-5xl text-primary leading-tight md:ml-auto max-w-xl">
                   Doveva essere solo una sosta.
                   <em className="block mt-2">È diventata una vita intera.</em>
                 </h2>
               </div>
 
-              <div className="relative rounded-2xl overflow-hidden shadow-elevated min-h-[260px] md:min-h-[420px]">
+              <div className="relative rounded-2xl overflow-hidden shadow-elevated min-h-[260px] md:min-h-[420px] md:w-[420px] order-1 md:order-2">
                 <Image
-                  src="/gelato-hero.webp"
-                  alt="Gelato artigianale Orso Bianco nel cuore di Castiglione della Pescaia"
+                  src="/fondatori-casa-sanremo.jpg"
+                  alt="Carmine Marsella e Sara Masci, titolari della Gelateria Orso Bianco, a Casa Sanremo"
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 768px) 100vw, 420px"
                   className="object-cover"
                 />
               </div>
