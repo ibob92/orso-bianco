@@ -157,8 +157,8 @@ const jsonLd = {
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: 42.7636,
-        longitude: 10.8826,
+        latitude: 42.7621616,
+        longitude: 10.8782558,
       },
       servesCuisine: ["Gelato artigianale", "Sorbetto", "Granite"],
       image: [

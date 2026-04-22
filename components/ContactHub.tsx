@@ -10,8 +10,9 @@ const HOURS: SeasonHours = {
   sunday: [13, 20],
 };
 
-const MAPS_PLACE_URL =
-  "https://www.google.com/maps/place/Gelateria+Orso+Bianco/@42.7636,10.8826,17z/";
+// Canonical Google Maps URL (CID = unique business identifier).
+// Opens the exact business card, survives rename/move.
+const MAPS_PLACE_URL = "https://www.google.com/maps?cid=13152876127029996368";
 
 const IG_POSTS = [
   { src: "/ig/post-0.jpg", alt: "Gelateria Orso Bianco a Casa Sanremo 2026 — Festival di Sanremo" },
