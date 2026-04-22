@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
       <div className="max-w-screen-xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
         {/* Text */}
-        <div className="z-10">
+        <div className="z-10 text-center flex flex-col items-center">
           <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-5">
             dal 1974 · Castiglione della Pescaia
           </p>
@@ -21,7 +21,7 @@ export default function HeroSection() {
               <em>Casa Sanremo</em>.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#gusti"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3.5 rounded-full font-semibold hover:scale-[1.02] transition-transform"
