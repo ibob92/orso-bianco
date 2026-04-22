@@ -411,7 +411,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="mt-10 pt-8 border-t border-gold/20 grid grid-cols-1 sm:grid-cols-2 gap-6 text-center sm:text-left">
+              <div className="mt-10 pt-8 border-t border-gold/20 grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
                 <div>
                   <p className="text-gold text-[10px] uppercase tracking-[0.25em] font-semibold mb-2">
                     Casa Sanremo
