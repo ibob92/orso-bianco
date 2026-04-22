@@ -56,6 +56,45 @@ const gustiData = [
   },
 ];
 
+const altriProdotti = [
+  {
+    name: "Yogurt soft",
+    description: "Cremoso, fresco, leggero. Servito con frutta di stagione e topping a scelta.",
+    imageSrc: "/prodotti/yogurt-soft.webp",
+    imageAlt: "Yogurt soft cremoso con frutti di bosco — Gelateria Orso Bianco Castiglione della Pescaia",
+  },
+  {
+    name: "Crepes",
+    description: "Sottili, dorate, farcite al momento. Dal cioccolato alla Nutella fino a creazioni stagionali.",
+    imageSrc: "/prodotti/crepes.webp",
+    imageAlt: "Crepe dorata con cioccolato e zucchero a velo — Gelateria Orso Bianco",
+  },
+  {
+    name: "Granite di yogurt",
+    description: "La freschezza della granita incontra la cremosità dello yogurt. Perfetta fronte mare.",
+    imageSrc: "/prodotti/granita-yogurt.webp",
+    imageAlt: "Granita di yogurt con fragola — Gelateria Orso Bianco Maremma",
+  },
+  {
+    name: "Caffetteria",
+    description: "Miscela selezionata, espresso italiano. Per una pausa breve o l'inizio della giornata.",
+    imageSrc: "/prodotti/caffetteria.webp",
+    imageAlt: "Espresso italiano con biscottino amaretto — Gelateria Orso Bianco",
+  },
+  {
+    name: "Macedonie fresche",
+    description: "Solo frutta di stagione, tagliata al momento. Il gusto dell'estate in una coppetta.",
+    imageSrc: "/prodotti/macedonia.webp",
+    imageAlt: "Macedonia di frutta fresca con menta — Gelateria Orso Bianco Castiglione della Pescaia",
+  },
+  {
+    name: "Frappè",
+    description: "Cremoso, goloso, al gusto del giorno. Una coccola veloce da portare in passeggiata.",
+    imageSrc: "/prodotti/frappe.webp",
+    imageAlt: "Frappè alla vaniglia con panna e caramello — Gelateria Orso Bianco",
+  },
+];
+
 const SITE_URL = "https://gelateriaorsobianco.it";
 
 const jsonLd = {
@@ -332,118 +371,64 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="max-w-6xl mx-auto">
-              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-5">
+            <div className="max-w-3xl mx-auto">
+              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-5 text-center">
                 La nostra storia
               </p>
 
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 xl:gap-12 text-on-surface-variant leading-relaxed text-base md:text-lg">
-                <div className="space-y-5">
-                  <p>
-                    Carmine e Sara avevano diciotto e diciassette anni. Tornavano da Torino
-                    verso Frosinone quando decisero di fermarsi lungo la strada. Un pit stop.
-                    Castiglione della Pescaia, fino ad allora un posto a loro sconosciuto.
-                    Bastò una passeggiata tra il borgo e il lungomare per restarne folgorati.
-                    Si promisero che un giorno sarebbero tornati. Per restare.
-                  </p>
-
-                  <p>
-                    Prima, però, la vita li ha portati altrove. La loro prima esperienza
-                    inizia all&apos;estero, lontani da casa. Lì hanno lavorato, imparato,
-                    fatto sacrifici e soprattutto messo da parte ogni risparmio.
-                    Carmine inseguiva la sua passione per il calcio, che lo ha portato fino
-                    a vivere un&apos;esperienza in Irlanda. Sara coltivava la sua passione
-                    per l&apos;estetica, il trucco e la bellezza. Due strade diverse,
-                    ma la stessa voglia di costruire qualcosa.
-                  </p>
-
-                  <p>
-                    Erano partiti con un&apos;idea ben precisa: vivere un&apos;esperienza all&apos;estero,
-                    crescere, aprirsi a una nuova lingua e a una nuova cultura, per poi tornare
-                    in Italia, costruire un progetto comune e provarci davvero. E poi, quel ricordo.
-                    Quel luogo, sul litorale toscano, che non avevano mai dimenticato.
-                  </p>
-
-                  <p>
-                    Nel 2011 decisero di tornare in Italia e di aprire una pizzeria-ristorante,
-                    il loro primo progetto, che durò solo una stagione. L&apos;anno successivo,
-                    quasi per caso, iniziarono a vivere da vicino la realtà della gelateria
-                    accanto alla loro attività. Da lì nacque qualcosa. Un interesse.
-                    Prima un&apos;esperienza da dipendenti. Poi una passione. Infine, una scelta.
-                  </p>
-                </div>
-
-                <div className="space-y-5">
-                  <p>
-                    Nel 2013 rilevarono quella stessa gelateria, che da allora è diventata
-                    la loro casa. Partendo da zero. Senza corsi. Senza scorciatoie.
-                    Senza certezze. Solo passione, sacrificio e la voglia di costruire
-                    qualcosa di loro, tra latte, zucchero e panna.
-                  </p>
-
-                  <p>
-                    Ci sono voluti anni. Giorni lunghi, spesso oltre le 18 o 19 ore di lavoro,
-                    senza pause settimanali. Stagioni intense. Errori. Ripartenze.
-                    Ma quella strada li ha portati lontano.
-                  </p>
-
-                  <p>
-                    Oggi quella promessa ha un nome: <strong>Orso Bianco</strong>.
-                    Gelateria ufficiale di Casa Sanremo 2024, 2025 e 2026.
-                    Best Gelateria in Maremma 2020, 2021, 2022 e 2023.
-                  </p>
-
-                  <div className="pt-2 border-l-2 border-gold/30 pl-5 md:pl-6">
-                    <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
-                      La nostra filosofia
-                    </p>
-                    <div className="space-y-4">
-                      <p>
-                        Oggi, dopo più di dieci anni di esperienza, la nostra idea di gelato
-                        nasce da una ricerca attenta delle materie prime. Selezioniamo ingredienti
-                        di qualità, con cura e rispetto.
-                      </p>
-                      <p>
-                        Ma non ci siamo mai fermati solo al territorio. Siamo sempre stati curiosi,
-                        appassionati di viaggi, alla ricerca di sapori, prodotti e ispirazioni
-                        da ogni parte. Perché crediamo che la qualità non abbia confini,
-                        e che ogni ingrediente possa raccontare una storia.
-                      </p>
-                      <p>
-                        È così che ogni giorno prendono forma i nostri gusti:
-                        tra tradizione, ricerca e identità.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Oltre il gelato */}
-        <section className="bg-surface-low">
-          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
-            <div className="max-w-4xl">
-              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
-                Oltre il gelato
-              </p>
-              <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight mb-8">
-                Il nostro mondo non si ferma al gelato artigianale.
-              </h2>
-              <div className="space-y-5 text-on-surface-variant text-lg md:text-2xl leading-relaxed">
+              <div className="space-y-6 text-on-surface-variant leading-relaxed text-base md:text-lg">
                 <p>
-                  Ogni giorno prepariamo una selezione di prodotti pensati
-                  per essere gustati fronte mare:
+                  Carmine e Sara scoprono <strong>Castiglione della Pescaia</strong> quasi
+                  per caso, durante un viaggio. Una passeggiata, il mare, e una promessa:
+                  <strong> tornare. Per restare.</strong>
                 </p>
-                <ul className="space-y-4 pl-6 list-disc marker:text-gold text-primary text-xl md:text-3xl leading-relaxed">
-                  <li>Yogurt soft</li>
-                  <li>Crepes</li>
-                  <li>Granite di yogurt</li>
-                  <li>Caffetteria</li>
-                  <li>Macedonie fresche</li>
-                  <li>Frappè</li>
-                </ul>
+
+                <p>
+                  Prima, però, il mondo. L&apos;esperienza all&apos;estero, il lavoro,
+                  i sacrifici: Carmine inseguendo la sua passione per il <strong>calcio</strong>,
+                  Sara coltivando il suo sogno da <strong>estetista</strong>. Poi il ritorno
+                  in Italia, il primo progetto, e l&apos;incontro con la gelateria. Da lì
+                  nasce tutto: prima un lavoro, poi una passione, infine una scelta.
+                </p>
+
+                <p>
+                  Nel <strong>2013</strong>, dopo l&apos;esperienza da dipendenti,
+                  decisero di acquistare la storica gelateria sul lungomare di Castiglione
+                  della Pescaia.
+                </p>
+
+                <p className="font-serif text-primary text-xl md:text-2xl leading-snug py-2">
+                  Partirono da zero. Senza scorciatoie.
+                </p>
+
+                <p>
+                  Anni intensi, fatti di sacrificio, errori e ripartenze. Ma anche di
+                  crescita, identità e visione.
+                </p>
+
+                <p className="font-serif text-primary text-xl md:text-2xl leading-snug py-2">
+                  Oggi Orso Bianco è molto più di una gelateria.
+                  <em className="block mt-1">È una promessa mantenuta.</em>
+                </p>
+              </div>
+
+              <div className="mt-10 pt-8 border-t border-gold/20 grid grid-cols-1 sm:grid-cols-2 gap-6 text-center sm:text-left">
+                <div>
+                  <p className="text-gold text-[10px] uppercase tracking-[0.25em] font-semibold mb-2">
+                    Casa Sanremo
+                  </p>
+                  <p className="text-on-surface font-medium">
+                    Gelateria ufficiale <strong>2024 · 2025 · 2026</strong>
+                  </p>
+                </div>
+                <div>
+                  <p className="text-gold text-[10px] uppercase tracking-[0.25em] font-semibold mb-2">
+                    Best in Maremma
+                  </p>
+                  <p className="text-on-surface font-medium">
+                    <strong>2020 · 2021 · 2022 · 2023</strong>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -464,6 +449,82 @@ export default function Home() {
             {gustiData.map((gusto) => (
               <GustoCard key={gusto.name} {...gusto} />
             ))}
+          </div>
+        </section>
+
+        {/* Altri prodotti */}
+        <section id="prodotti" className="bg-surface">
+          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="text-center mb-12 md:mb-16">
+              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                Oltre il gelato
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight">
+                Il nostro mondo non si ferma <em>al gelato</em>
+              </h2>
+              <p className="text-on-surface-variant max-w-xl mx-auto mt-4 leading-relaxed">
+                Ogni giorno prepariamo una selezione di prodotti pensati
+                per essere gustati fronte mare.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-8">
+              {altriProdotti.map((prodotto) => (
+                <div
+                  key={prodotto.name}
+                  className="flex flex-col gap-3 bg-surface-lowest rounded-xl overflow-hidden shadow-ambient"
+                >
+                  <div className="bg-surface-mid aspect-square overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={prodotto.imageSrc}
+                      alt={prodotto.imageAlt}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="px-4 pb-4 pt-1 md:px-5 md:pb-5">
+                    <h3 className="font-serif text-lg md:text-xl text-primary mb-1">
+                      {prodotto.name}
+                    </h3>
+                    <p className="text-xs md:text-sm text-on-surface-variant leading-relaxed">
+                      {prodotto.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* La nostra filosofia */}
+        <section id="filosofia" className="bg-surface-low">
+          <div className="max-w-screen-xl mx-auto px-6 md:px-12 py-16 md:py-24">
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="text-gold text-xs uppercase tracking-[0.25em] font-semibold mb-3">
+                La nostra filosofia
+              </p>
+              <h2 className="font-serif text-3xl md:text-4xl text-primary leading-tight mb-8">
+                La qualità <em>non ha confini</em>
+              </h2>
+              <div className="space-y-5 text-on-surface-variant text-base md:text-lg leading-relaxed text-left md:text-center">
+                <p>
+                  Dopo più di dieci anni di esperienza, la nostra idea di gelato nasce da
+                  una <strong>ricerca attenta delle materie prime</strong>. Selezioniamo
+                  ingredienti di qualità, con cura e rispetto.
+                </p>
+                <p>
+                  Non ci siamo mai fermati solo al territorio. Siamo curiosi, appassionati
+                  di viaggi, alla ricerca di sapori, prodotti e ispirazioni da ogni parte.
+                  Perché crediamo che <strong>la qualità non abbia confini</strong>, e che
+                  ogni ingrediente possa raccontare una storia.
+                </p>
+                <p className="font-serif text-primary text-xl md:text-2xl leading-snug pt-2">
+                  Ogni giorno prendono forma i nostri gusti:
+                  <em className="block mt-1">tra tradizione, ricerca e identità.</em>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
